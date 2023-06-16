@@ -2,6 +2,12 @@ const getWeather = async(place) =>{
    const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${place}?unitGroup=metric&key=9ZGY3KY8APHUN8DC4P8RR87GN&contentType=json`;
 
    let fullJsonData,timezone,address,temperature,conditions,description;
+   var typed = new Typed('#typed-element', {
+  strings: ['Hello!', 'Welcome!', 'Typed.js example'],
+     typeSpeed: 50,
+     loop: true
+   });
+
 
    await fetch(url)
    .then(response => response.json())
