@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The Weather App</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 <body style="background-color:#0d1a40" >
   <center class="bodyClass">The Weather App</center>
     <div class="allText" id="searchform" >
-        <h2 id="placeName" contenteditable="true">Enter the place</h2>
+        <h2 id="placeName" contenteditable="true"><span id="typed-element"></span> </h2>
         <h2 id="timeZone"></h2>
         <h2 id="address"></h2>
         <h2 id="temperature"></h2>
